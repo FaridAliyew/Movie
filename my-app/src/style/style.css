@@ -1,0 +1,69 @@
+header {
+    .container-fluid {
+        padding: 22px 100px;
+
+        span {
+            font-size: 13px;
+        }
+    }
+}
+
+nav {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+
+    .container-fluid {
+        padding: 0px 100px;
+    }
+
+    .navbar-logo {
+        max-height: 45px;
+    }
+
+    .navbar-link {
+        margin-right: 30px;
+        cursor: pointer;
+    }
+
+    .navbar-link:last-child {
+        margin-right: 0;
+    }
+}
+
+.swiper {
+    height: 450px;
+}
+
+.swiper-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    /* Arxa plan üçün açıq bir rəng */
+}
+
+.slider-img {
+    width: 100%;
+    height: auto;
+    /* Şəkillərin nisbətini qorumaq üçün */
+    border-radius: 8px;
+    /* Küncləri yuvarlaqlaşdırmaq üçün */
+}
+
+.swiper-pagination {
+    position: absolute;
+    bottom: 10px !important;
+}
+
+.card-custom {
+    display: flex;
+    width: 100%;
+  }
+  
+  .card-image {
+    flex: 0 0 50%; /* Şəkilin genişliyi 50% */
+  }
+  
+  .card-body {
+    flex: 1;
+    padding: 16px; /* İstədiyin padding dəyərini təyin et */
+  }
+  
