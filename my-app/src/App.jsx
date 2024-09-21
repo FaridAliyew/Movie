@@ -1,5 +1,7 @@
 import Carusel from "./components/Carusel";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
+import LastestMovie from "./components/LastestMovie";
 import Navbar from "./components/Navbar";
 import Section from "./components/Section";
 import './style/style.css'
@@ -13,6 +15,8 @@ function App() {
       <Navbar/>
       <Carusel/>
       <Section/>
+      <LastestMovie/>
+      <Footer/>
     </div>
   );
 }
