@@ -40,7 +40,7 @@ function Carusel() {
 
     return (
         <div className="carusel-container mt-5">
-            <Container>
+            <Container className='carusel'>
                 <Row>
                     <Swiper
                         spaceBetween={20}
