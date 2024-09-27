@@ -42,7 +42,7 @@ function Section() {
                 <div className="card mb-3" style={{ maxWidth: '540px' }}>
                   <div className="row g-0">
                     <div className="col-md-4">
-                      <img src={movie.image_url} className="img-fluid rounded-start" alt={movie.title} />
+                      <img src={movie.image_url} className="img-fluid rounded-start w-100" alt={movie.title} />
                     </div>
                     <div className="col-md-8">
                       <div className="card-body">
@@ -69,7 +69,7 @@ function Section() {
               value={searchTerm} 
               onChange={e => setSearchTerm(e.target.value)} 
             />
-            <Button variant="primary" onClick={handleSearch}>Search</Button>
+            <Button variant="primary" className='mt-3' onClick={handleSearch}>Search</Button>
           </Form>
           <div className="mt-4">
             <h6>Statistics</h6>

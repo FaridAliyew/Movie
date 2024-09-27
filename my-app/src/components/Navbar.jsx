@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Dropdown } from 'react-bootstrap';
+import { Link } from 'react-router-dom'; // Link-i import edirik
 
 function Navbar() {
 
@@ -21,22 +22,16 @@ function Navbar() {
                 Menu
               </Dropdown.Toggle>
               <Dropdown.Menu align="end">
-                <Dropdown.Item href="#home">Home</Dropdown.Item>
-                <Dropdown.Item href="#movies">Movies</Dropdown.Item>
-                <Dropdown.Item href="#blog">Blog</Dropdown.Item>
-                <Dropdown.Item href="#mega-menu">Mega Menu</Dropdown.Item>
-                <Dropdown.Item href="#forms">Forms</Dropdown.Item>
-                <Dropdown.Item href="#contact">Contact</Dropdown.Item>
+                <Dropdown.Item as={Link} to="/">Home</Dropdown.Item> {/* Link olaraq to istifadə edirik */}
+                <Dropdown.Item as={Link} to="/about">About</Dropdown.Item>
+                <Dropdown.Item as={Link} to="/contact">Contact</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
 
             <div className="d-none d-xl-flex">
-              <span className="navbar-link">Home</span>
-              <span className="navbar-link">Movies</span>
-              <span className="navbar-link">Blog</span>
-              <span className="navbar-link">Mega Menu</span>
-              <span className="navbar-link">Forms</span>
-              <span className="navbar-link">Contact</span>
+              <Link to="/" className="navbar-link">Home</Link>
+              <Link to="/about" className="navbar-link">About</Link>
+              <Link to="/contact" className="navbar-link">Contact</Link>
             </div>
           </Col>
         </Row>
